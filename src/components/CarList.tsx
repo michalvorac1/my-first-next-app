@@ -1,4 +1,3 @@
-import { Car } from '@prisma/client'
 import CarItem from './CarItem'
 import { CarWithDeps } from '@/types/prismaTypes'
 
