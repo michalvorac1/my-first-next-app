@@ -1,7 +1,7 @@
-import { Car } from '@prisma/client'
+import { CarWithDeps } from '@/types/prismaTypes'
 
-const CarItem = ({ car }: { car: Car }) => {
-  return <div>{car.id}</div>
+const CarItem = ({ car }: { car: CarWithDeps }) => {
+  return <div>{car.model.name}</div>
 }
 
 export default CarItem
