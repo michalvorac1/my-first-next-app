@@ -7,6 +7,7 @@ export const createCar = async (formData: FormData) => {
   const modelId = formData.get('modelId')?.toString()
   const brandId = formData.get('brandId')?.toString()
   const description = formData.get('description')?.toString()
+  const year = Number(formData.get('year'))
 
   if (!modelId || !brandId || !description) {
     return
@@ -17,8 +18,10 @@ export const createCar = async (formData: FormData) => {
       modelId: modelId,
       brandId: brandId,
       description: description,
+      year: year,
     },
   })
 
-  redirect('/')
+  // redirect to Home Page (Car List)
+  redirect('../')
 }
