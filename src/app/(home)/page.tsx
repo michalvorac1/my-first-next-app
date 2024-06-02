@@ -1,3 +1,4 @@
+import AddCarButton from '@/components/AddCarButton'
 import CarList from '@/components/CarList'
 import prisma from '@/utils/prisma'
 
@@ -18,6 +19,7 @@ const HomePage = async () => {
     <div className="container mx-auto px-40">
       Home Page
       <CarList cars={cars} />
+      <AddCarButton />
     </div>
   )
 }
