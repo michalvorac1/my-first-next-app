@@ -19,9 +19,9 @@ const CarDetailPage = async ({ params }: { params: { id: string } }) => {
 
   return (
     <div className="container mx-auto px-40">
-      <Link href={'/'}>Back to list</Link>
+      <Link href={'/'}>Go back</Link>
       <div className="px-4 sm:px-0">
-        <h3 className="text-base font-semibold leading-7 text-gray-900">Car Detail</h3>
+        <h3 className="text-base font-semibold leading-7 text-gray-900">Car details</h3>
         <p className="mt-1 max-w-2xl text-sm leading-6 text-gray-500">See details about your selected car.</p>
       </div>
       <div className="mt-6 border-t border-gray-100">

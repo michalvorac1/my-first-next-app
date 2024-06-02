@@ -8,8 +8,11 @@ export const createCar = async (formData: FormData) => {
   const brandId = formData.get('brandId')?.toString()
   const description = formData.get('description')?.toString()
   const year = Number(formData.get('year'))
+  const location = formData.get('location')?.toString()
+  const price = Number(formData.get('price'))
+  const color = formData.get('color')?.toString()
 
-  if (!modelId || !brandId || !description) {
+  if (!modelId || !brandId || !description || !price) {
     return
   }
 
@@ -19,6 +22,9 @@ export const createCar = async (formData: FormData) => {
       brandId: brandId,
       description: description,
       year: year,
+      location: location,
+      price: price, 
+      color: color,
     },
   })
 

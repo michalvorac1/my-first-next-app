@@ -17,22 +17,6 @@ const NewCarForm = ({
               <BrandAndModelFormFields models={models} brands={brands} />
             </div>
 
-            <div className="col-span-full">
-              <label htmlFor="description" className="block text-sm font-medium leading-6 text-gray-900">
-                Description
-              </label>
-              <div className="mt-2">
-                <input
-                  type="text"
-                  name="description"
-                  id="description"
-                  placeholder="Description of your car."
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  required={true}
-                />
-              </div>
-            </div>
-
             <div className="sm:col-span-2 sm:col-start-1">
               <label htmlFor="year" className="block text-sm font-medium leading-6 text-gray-900">
                 Year
@@ -47,6 +31,72 @@ const NewCarForm = ({
                   placeholder="e.g. 2021" 
                   required={false} 
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+
+            <div className="sm:col-span-2 sm:col-start-1">
+              <label htmlFor="location" className="block text-sm font-medium leading-6 text-gray-900">
+                Location
+              </label>
+              <div className="mt-2">
+                <input 
+                  type="text"                   
+                  name="location" 
+                  id="location"
+                  placeholder="e.g. Prague" 
+                  required={false} 
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+
+            <div className="sm:col-span-2 sm:col-start-1">
+              <label htmlFor="color" className="block text-sm font-medium leading-6 text-gray-900">
+                Color
+              </label>
+              <div className="mt-2">
+                <input 
+                  type="text"                   
+                  name="color" 
+                  id="color"
+                  placeholder="e.g. Red" 
+                  required={false} 
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+
+            <div className="sm:col-span-2 sm:col-start-1">
+              <label htmlFor="price" className="block text-sm font-medium leading-6 text-gray-900">
+                Price
+              </label>
+              <div className="mt-2">
+                <input 
+                  type="number"                   
+                  min="0"
+                  max="9999999"
+                  name="price" 
+                  id="price"
+                  placeholder="e.g. 500000" 
+                  required={true} 
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+
+            <div className="col-span-full">
+              <label htmlFor="description" className="block text-sm font-medium leading-6 text-gray-900">
+                Description
+              </label>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="description"
+                  id="description"
+                  placeholder="Description of your car."
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  required={true}
                 />
               </div>
             </div>

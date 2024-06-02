@@ -13,6 +13,9 @@ const CarItem = ({ car }: { car: CarWithDeps }) => {
         </div>
         <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
           <p className="text-sm leading-6 text-gray-900">{car.price}</p>
+          <p className="mt-1 text-xs leading-5 text-gray-500">
+            {car.location}
+          </p>
         </div>
       </li>
     </Link>
