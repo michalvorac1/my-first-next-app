@@ -31,3 +31,12 @@ export const createCar = async (formData: FormData) => {
   // redirect to Home Page (Car List)
   redirect('../')
 }
+
+export const deleteCar = async (id: string) => {
+  await prisma.car.delete({
+    where: {
+      id,
+    },
+  });
+  redirect('../')
+};

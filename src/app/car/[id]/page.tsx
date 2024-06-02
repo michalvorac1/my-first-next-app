@@ -1,3 +1,4 @@
+import DeleteCarButton from '@/components/DeleteCarButton'
 import prisma from '@/utils/prisma'
 import Link from 'next/link'
 
@@ -58,6 +59,8 @@ const CarDetailPage = async ({ params }: { params: { id: string } }) => {
           </div>
         </dl>
       </div>
+
+      <DeleteCarButton id={car?.id} />
     </div>
   )
 }
