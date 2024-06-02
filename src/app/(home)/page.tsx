@@ -14,7 +14,7 @@ const getCars = async () => {
 const HomePage = async () => {
   const cars = await getCars()
   return (
-    <div>
+    <div className="container mx-auto px-40">
       Home Page
       <CarList cars={cars} />
     </div>
